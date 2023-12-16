@@ -47,7 +47,7 @@ def test_get_cart_detail(client):
     cart_id = 1
     response = client.get(f"/api/cart/{cart_id}")
     assert response.status_code == 200
-    
+
 
 def test_put_cart(client):
     # Test PUT /api/cart/{id}
@@ -71,5 +71,3 @@ def test_delete_cart(client):
     cart_id = 1
     response = client.delete(f"/api/cart/{cart_id}")
     assert response.status_code == 200
-   
-
